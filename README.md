@@ -1,3 +1,17 @@
 # Final Project
-This is where the final project will be ([link](
-https://uoseg23.github.io/final-project/)).
+This is a ([link](https://uoseg23.github.io/final-project/)) to the final project
+
+Team Name:<br/>
+<br/>
+Team Member Names:<br/>
+Alexander Azizi Martin - Student Number ######### <br/>
+Fatimah Mohammed Salih - Student Number ######### <br/>
+Cattuong Le - Student Number ######### <br/>
+Jérémy Baillargeon - Student Number 300230276 <br/>
+Rajan Sharma - Student Number ######### <br/>
+Taha Jalili - Student Number ######### <br/>
+<br/>
+<br/>
+Product Name:
+<br/>
+Description:<br/>
