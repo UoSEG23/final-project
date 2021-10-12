@@ -8,7 +8,7 @@ Alexander Azizi Martin - Student Number ######### <br/>
 Fatimah Mohammed Salih - Student Number ######### <br/>
 Cattuong Le - Student Number 300001854  <br/>
 Jérémy Baillargeon - Student Number 300230276 <br/>
-Rajan Sharma - Student Number ######### <br/>
+Rajan Sharma - Student Number 300228735 <br/>
 Taha Jalili - Student Number ######### <br/>
 <br/>
 <br/>
