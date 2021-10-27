@@ -1,0 +1,17 @@
+Overall feel
+    Project should have a calming and organized feeling as those are the main aspects that we 
+    try to improve in the customers life
+
+==================
+Colors
+    styles guidelines
+    notes : 
+        text-color : Black blue
+        navigator color : Dark purple
+    A : navy blue #264E70
+    B : Sage Green #679188
+    C : Mint Green #BBD4CE
+    D : Black Blue #272643
+    E : Beige #F7E2D1
+    F : Dark Purple #664B80
+==================
