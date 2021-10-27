@@ -103,7 +103,6 @@
         transition: 0.3s ease;
         height: 50vh;
         z-index: -1;
-
     }
 
     .navbar__menu.active{
@@ -114,6 +113,5 @@
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
-
     }
 }
