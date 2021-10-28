@@ -6,6 +6,7 @@
 
 }
 
+/*-----NavBar---*/
 .navbar {
     background: #264E70;
     height: 80px;
@@ -101,11 +102,10 @@
 
 }
 
-
+/*-----Main Page Styles---*/
 .main{
     background-color: #264E70;
 }
-
 
 .main__container {
     display: grid;
