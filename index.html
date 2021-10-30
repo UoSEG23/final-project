@@ -1,52 +1,42 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <link rel="icon" href="images/title_image.png">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/title_image.png">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    
     <title>Home</title>
-</head>
-<body>
+  </head>
 
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" id="navbar__logo"><i class="far fa-calendar-alt"></i> LivTo</a>
-            <div class="navbar__toggle" id="Mobile__Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links"> Home </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="team.html" class="navbar__links"> About Us </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="product.html" class="navbar__links"> Product </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="pricing.html" class="navbar__links"> Pricing </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="how_to _use.html" class="navbar__links"> How to Use </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contact-us.html" class="navbar__links"> Contact </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+  <body>
+    <header>
+      
+      <div class="hamburger">
+        <input class="hamburger-btn" type="checkbox" />
+        <div class="hamburger-icon"></div>
+        
+        <nav>
+          
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how_to _use.html">How to Use</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <div class="main">
         <div class="main__container">
+            <a href="index.html" id="navbar__logo"><i class="far fa-calendar-alt"></i> LivTo</a>
             <div class="main__content">
                 <div class="main__text">
                     <h1>LivTo Your Expectations</h1>
@@ -58,8 +48,7 @@
             </div>
         </div>
     </div>
+
     <script src="scripts/main.js"></script>
-</body>
-
-
+  </body>
 </html>
