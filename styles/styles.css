@@ -1,3 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif
+
+}
+
+
+
+#navbar__logo{
+    background-color: #679186;
+    background-image: linear-gradient(to top, #679186 0%, #BBE4CE 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3.5rem;
+}
+
+.fa-calendar{
+    margin-right: 0.5rem;
+
+}
+
+
+@media screen and (max-width: 960px){
+  
+
+    
+    #navbar__logo {
+        padding-left:25px;
+    }   
+
+}
+
+
+.main{
+    background-color: #264E70;
+    width: 100%;
+}
+
+.main__container {
+
+
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #264E70;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 20px 50px;
+}
+
+.main__content{
+    display: flex;
+    align-items: center;
+}
+
+.main__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15rem;
+}
+.main__content h1{
+    text-align: left ;
+    font-size: 5.5rem;
+    background-color: #679186;
+    background-image: linear-gradient(to top, #679186 0%, #BBE4CE 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h2{
+    text-align: left ;
+    font-size: 2rem;
+    background-color: #679186;
+    background-image: linear-gradient(to top, #95ADBE 0%, #95ADBE 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
 :root {
   --navy-blue: #264E70;
   --dark-navy-blue: #272643;
@@ -7,13 +102,6 @@
   --beige: #F7E2D1;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  font-family: 'Roboto', sans-serif;
-}
 
 html, body {
   width: 100%;
@@ -37,7 +125,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
   position: absolute;
   top: -20px;
   left: -50px;
