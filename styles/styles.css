@@ -43,7 +43,7 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .fa-calendar{
@@ -102,7 +102,7 @@
 
 }
 
-/*-----Main Page Styles---*/
+
 .main{
     background-color: #264E70;
 }
@@ -121,6 +121,17 @@
     padding: 0 50px;
 }
 
+.main__content{
+    display: flex;
+    align-items: center;
+}
+
+.main__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15rem;
+}
 .main__content h1{
     text-align: left ;
     font-size: 4rem;
