@@ -12,6 +12,6 @@ Rajan Sharma - Student Number 300228735 <br/>
 Taha Jalili - Student Number 300262279 <br/>
 <br/>
 <br/>
-Product Name:
+Product Name: LivTo
 <br/>
 Description:<br/>
