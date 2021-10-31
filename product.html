@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,41 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <title>Product</title>
-  </head>
+    <style>
+        body {
+            background-color: #264E70;
+        }
+        .product-info div{
+            padding-top: 20px ;
+            padding-bottom: 10px;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            margin-top: 3vw;
+            }
+        .product-info div h2{
+            text-align: center;
+            color : #F7E2D1;
+        }
+        .product-info div p{
+            text-align: center;
+            color : #BBD4CE
+        }
+        .what{
+            background-color: #679188;
+            border-radius: 2vw;
+        }
+        .app{
+            background-color: #272643;
+            border-radius: 2vw;
+        }
+        .physical{
+            background-color: #664B80;
+            border-radius: 2vw;
+        }
+    </style>
+</head>
 
-  <body>
+<body>
     <header>
       <div class="hamburger">
         <input class="hamburger-btn" type="checkbox" />
@@ -30,11 +62,29 @@
         </nav>
       </div>
     </header>
-
-    <main>
-      Product page.
-    </main>
-
-    <script src="scripts/main.js"></script>
-  </body>
+    
+    <div id="product" class="product">
+        <div id="product-intro">
+            <h1>Product page</h1>
+        </div>
+        <div id="product-info" class="product-info">
+            <div id="what" class="what">
+                <h2>What is LivTo</h2>
+                <p>Explination of what is LivTo
+                </p>
+            </div>
+            <div id="app" class="app">
+                <h2>LivTo app</h2>
+                <p>Explination of LivTo app
+                </p>
+            </div>
+            <div id="physical" class="physical">
+                <h2>LivTo physical products</h2>
+                <p>Explination of LivTo our physical products
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts/main.js"></script>
 </html>
