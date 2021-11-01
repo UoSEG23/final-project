@@ -11,8 +11,14 @@
 
     <title>Product</title>
     <style>
+        .product{
+            width: 100%;
+        }
         body {
-            background-color: #264E70;
+            background-color: rgba(38, 78, 112);
+        }
+        .product-intro{
+            text-align: center;
         }
         .product-info div{
             padding-top: 20px ;
@@ -32,6 +38,9 @@
         .what{
             background-color: #679188;
             border-radius: 2vw;
+        }
+        .what:hover{
+            height:100px;
         }
         .app{
             background-color: #272643;
@@ -64,11 +73,11 @@
     </header>
     
     <div id="product" class="product">
-        <div id="product-intro">
+        <div id="product-intro" class="product-intro">
             <h1>Product page</h1>
         </div>
         <div id="product-info" class="product-info">
-            <div id="what" class="what">
+            <div id="what" class="what" >
                 <h2>What is LivTo</h2>
                 <p>Explination of what is LivTo
                 </p>
