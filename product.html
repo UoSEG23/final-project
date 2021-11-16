@@ -44,16 +44,41 @@
         }
         .product-what{
             background-color: #679188;
+            position: relative;
+            padding-bottom: 5vw;
         }
         .product-what ul li{
-            width: 45%;
+            width: 100%;
             min-width: 250px;
             float: left;
             margin-left: 2vw;
             padding-bottom: 1vw;
+            font-size: 3vw;
+        }
+        .product-list{
+            list-style-image: none;
         }
         .product-app{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 50%;
             background-color: #272643;
+            border-radius: 2vw;
+            text-align: center;
+            color: #5f8d83;
+            font-size: 3vw;
+            padding: 1vw 4vw;
+            margin-bottom: 1vw;
+            margin-right:1vw;
+            transition-duration: 300ms;
+        }
+        .product-app:hover{
+            cursor: pointer;
+            background-color: #72a59a;
+            color: #272643;
+            transition-duration: 400ms;
+
         }
         .product-physical{
             background-color: #664B80;
@@ -87,19 +112,17 @@
         <div id="product-info" class="product-info">
             <div id="product-what" class="product-what" >
                 <h1>What is LivTo</h1>
-                <h2>LivTo is a way to help you remember and to improve :</h2>
-                <ul>
-                    <li>Chores (watering plants, clean bedsheets)</li>
-                    <li>Covid (cleaning your mask, sanitizing)</li>
-                    <li>Lifestyle reminders (plans, motivation, relaxation) </li>
+                <h2>LivTo is a lifestyle that will help you be more organise and to remember tasks</h2>
+                <ul class="product-list">
+                    <li>It help you remember forgetable chores like watering the plants, cleaning your bedsheets, etc...</li>
+                    <li>It will help you stay safe during covid with reminders to clean your mask or with sanitization</li>
+                    <li>It will improve your lifestyle with plans, motivation, relaxation reminders</li>
+                    <li>It will help students and prfessionals remember due dates automaticaly</li>
                     <li style="padding-bottom: 3vw;">Calendar (due dates, birthdays)</li>
                 </ul>
+                <button onclick="window.location.href='how_to _use.html'" class="product-app">LivTo app</button>
             </div>
-            <div id="product-app" class="product-app">
-                <h2>LivTo app</h2>
-                <p>Explination of LivTo app
-                </p>
-            </div>
+            
             <div id="product-physical" class="product-physical">
                 <h2>LivTo physical products</h2>
                 <p>Explination of LivTo our physical products</p>
