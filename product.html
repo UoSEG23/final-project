@@ -28,32 +28,37 @@
             border-radius: 2vw;
             width:90%;
             }
-        .product-info div h1{
+        .product h1{
             text-align: center;
+            font-size: 4vw; 
+            margin-bottom: 0;
         }
-        .product-info div h2{
+        .product-info h2{
             text-align: center;
             color : #F7E2D1;
+            font-size: 3vw;
+            padding-left: 2vw;
+            padding-right:2vw;
         }
-        .product-info div h3{
+        .product-info h3{
             text-align: center;
         }
-        .product-info div p{
-            text-align: center;
-            color : #BBD4CE;
-        }
+       
         .product-what{
             background-color: #679188;
             position: relative;
             padding-bottom: 5vw;
+            font-size: 2.5vw;
         }
         .product-what ul li{
-            width: 100%;
+            width: 90%;
             min-width: 250px;
             float: left;
-            margin-left: 2vw;
+            margin-left: 4vw;
+            margin-right: 3vw;
             padding-bottom: 1vw;
-            font-size: 3vw;
+            color:#14334e;
+            
         }
         .product-list{
             list-style-image: none;
@@ -61,19 +66,23 @@
         .product-app{
             position: absolute;
             right: 0;
-            bottom: 0;
-            max-width: 50%;
+            bottom: 0;   
+            margin-bottom: 1vw;
+            margin-right:1vw; 
+            color: #272643;       
+        }
+        .product-app button{
+            position: relative;
             background-color: #272643;
             border-radius: 2vw;
             text-align: center;
             color: #5f8d83;
-            font-size: 3vw;
+            font-size: 2vw;
             padding: 1vw 4vw;
-            margin-bottom: 1vw;
-            margin-right:1vw;
             transition-duration: 300ms;
+            margin-left: 2vw;
         }
-        .product-app:hover{
+        .product-app button:hover{
             cursor: pointer;
             background-color: #72a59a;
             color: #272643;
@@ -82,6 +91,27 @@
         }
         .product-physical{
             background-color: #664B80;
+        }
+        .product-physical p{
+            font-size: 2.5vw;
+        }
+        .product-physical button{
+            position: relative;
+            background-color: #272643;
+            border-radius: 2vw;
+            text-align: center;
+            color: #5f8d83;
+            font-size: 2vw;
+            padding: 1vw 4vw;
+            transition-duration: 300ms;
+            margin-left: 2vw;
+        }
+        .product-physical button:hover{
+            cursor: pointer;
+            background-color: #72a59a;
+            color: #272643;
+            transition-duration: 400ms;
+
         }
     </style>
 </head>
@@ -106,12 +136,9 @@
     </header>
     
     <div id="product" class="product">
-        <div id="product-intro" class="product-intro">
-            <a href="index.html" id="navbar__logo"><i class="far fa-calendar-alt"></i> LivTo</a>
-        </div>
+        <h1>What is LivTo</h1>
         <div id="product-info" class="product-info">
             <div id="product-what" class="product-what" >
-                <h1>What is LivTo</h1>
                 <h2>LivTo is a lifestyle that will help you be more organise and to remember tasks</h2>
                 <ul class="product-list">
                     <li>It help you remember forgetable chores like watering the plants, cleaning your bedsheets, etc...</li>
@@ -120,12 +147,18 @@
                     <li>It will help students and prfessionals remember due dates automaticaly</li>
                     <li style="padding-bottom: 3vw;">Calendar (due dates, birthdays)</li>
                 </ul>
-                <button onclick="window.location.href='how_to _use.html'" class="product-app">LivTo app</button>
+                <p class="product-app">All of that will be done in one single app
+                    <button onclick="window.location.href='how_to _use.html'" class="product-app">Learn more</button>
+                </p>
+                
             </div>
             
             <div id="product-physical" class="product-physical">
                 <h2>LivTo physical products</h2>
-                <p>Explination of LivTo our physical products</p>
+                <p>In the near future, LivTo will start making physical products to better organize your life.
+                    Please click the button below if you would like to add a suggestion
+                </p>
+                <button onclick="product_sug()">I have a product suggestion</button>
             </div>
         </div>
     </div>
