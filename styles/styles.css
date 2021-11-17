@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto:wght@300&display=swap');
 
 :root {
@@ -32,6 +33,9 @@ nav {
   z-index: 9999;
 }
 
+=======
+HEAD
+>>>>>>> product
 *{
   font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
