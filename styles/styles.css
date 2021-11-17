@@ -61,7 +61,7 @@ nav {
 }
 
 #main__img {
-  width: 90%;
+  width: 75%;
 }
 
 .fa-calendar{
@@ -130,7 +130,7 @@ nav {
 
   -webkit-font-smoothing: antialiased;  
   transform-origin: 0% 0%;
-  transform: translate(0, -100%);
+  transform: translate(0, -175%);
   transition: transform 0.75s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
