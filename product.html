@@ -23,18 +23,25 @@
         .product-intro{
             text-align: center;
         }
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .product-info div{
             display: inline-block;
             padding-top: 2vw ;
             padding-left: 0.5vw;
-            margin: 3vw 2vw 0 3vw;
+            margin: 3vw 0;
             border-radius: 2vw;
-            width:90%;
+            width:80%;
             }
         .product h1{
             text-align: center;
             font-size: 4vw; 
             margin-bottom: 0;
+            color: #F7E2D1;
+            margin-top: 3vw;
         }
         .product-info h2{
             text-align: center;
@@ -130,52 +137,55 @@
 
 <body>
     <header>
-      <div class="hamburger">
-          
-        <input class="hamburger-btn" type="checkbox" />
-        <div class="hamburger-icon"></div>
-        
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="how_to _use.html">How to Use</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-          </ul>
+            <a href="index.html" id="navbar__logo"><i class="far fa-calendar-alt"></i> LivTo</a>
+            <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how_to _use.html">How to Use</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="hamburger">
+            <input class="hamburger-btn" type="checkbox" />
+            <div class="hamburger-icon"></div>
+            </div>
         </nav>
-      </div>
     </header>
     
-    <div id="product" class="product">
-        <h1>What is LivTo</h1>
-        <div id="product-info" class="product-info">
-            <div id="product-what" class="product-what" >
-                <h2>LivTo is a lifestyle that will help you be more organized and to remember tasks</h2>
-                <ul class="product-list">
-                    <li>It helps you remember forgettable chores like watering the plants, cleaning your bedsheets, etc...</li>
-                    <li>It will help you stay safe during covid with reminders to clean your mask or with sanitization</li>
-                    <li>It will improve your lifestyle with plans, motivation, relaxation reminders</li>
-                    <li>It will help students and professionals remember due dates automatically</li>
-                    <li style="padding-bottom: 3vw;">Calendar (due dates, birthdays)</li>
-                </ul>
-                <p class="product-app">All of that will be done in a single app
-                    <button onclick="window.location.href='how_to _use.html'" class="product-app">Learn more</button>
-                </p>
+    <main>
+        <div id="product" class="product">
+            <h1>What is LivTo</h1>
+            <div class="product-info">
+                <div id="product-what" class="product-what" >
+                    <h2>LivTo is a lifestyle that will help you be more organized and to remember tasks</h2>
+                    <ul class="product-list">
+                        <li>It helps you remember forgettable chores like watering the plants, cleaning your bedsheets, etc...</li>
+                        <li>It will help you stay safe during covid with reminders to clean your mask or with sanitization</li>
+                        <li>It will improve your lifestyle with plans, motivation, relaxation reminders</li>
+                        <li>It will help students and professionals remember due dates automatically</li>
+                        <li style="padding-bottom: 3vw;">Calendar (due dates, birthdays)</li>
+                    </ul>
+                    <p class="product-app">All of that will be done in a single app
+                        <button onclick="window.location.href='how_to _use.html'" class="product-app">Learn more</button>
+                    </p>
+                    
+                </div>
                 
-            </div>
-            
-            <div id="product-physical" class="product-physical">
-                <h2>LivTo physical products</h2>
-                <p>In the near future, LivTo will start making physical products to better organize your life.
-                    <br/><br/>
-                    Please click the button below if you would like to help us with a suggestion
-                </p>
-                <button onclick="product_sug()" id="product_sug_btn">I have a product suggestion</button>
+                <div id="product-physical" class="product-physical">
+                    <h2>LivTo physical products</h2>
+                    <p>In the near future, LivTo will start making physical products to better organize your life.
+                        <br/><br/>
+                        Please click the button below if you would like to help us with a suggestion
+                    </p>
+                    <button onclick="product_sug()" id="product_sug_btn">I have a product suggestion</button>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 <script src="scripts/main.js"></script>
 </html>

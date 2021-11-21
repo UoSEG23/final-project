@@ -122,8 +122,9 @@ nav {
   position: absolute;
   top: 0px;
   left: 0px;
+  z-index: 10;
 
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   background-color: var(--navy-blue);
@@ -152,11 +153,6 @@ nav {
   border-bottom: 1px solid var(--beige);
 }
 
-.nav-links > ul > li:hover {
-  cursor: pointer;
-  transition: background-color 0.2s ease-in;
-  background-color: #214361;
-}
 
 
 .nav-links > ul > li:last-child {
@@ -166,6 +162,12 @@ nav {
 .nav-links > ul > li > a {
   text-decoration: none;
   color: var(--beige)
+}
+
+.nav-links > ul > li > a:hover {
+  cursor: pointer;
+  transition: text-decoration 0.2s ease-in;
+  text-decoration: underline;
 }
 
 .hamburger {
@@ -223,4 +225,8 @@ nav {
 
 [hamburger-btn-checked = true] .nav-links {
   transform: none;
+}
+
+[hamburger-btn-checked = true] main {
+  display: none;
 }
