@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto:wght@300&display=swap');
+
+:root {
+    --navy-blue: #264E70;
+    --dark-navy-blue: #272643;
+    --sage-green:#679188;
+    --mint-green: #BBD4CE;
+    --dark-purple: #664B80;
+    --beige: #F7E2D1;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    
+}
+.navbar{
+    background: var(--navy-blue);
+}
+.container{
+    text-align: center;
+    background: var(--navy-blue);
+    display: block;
+}
+.header{
+    padding-top: 20px;
+    font-size: 30px;
+    margin: auto;
+    line-height: 50px;
+    color: beige;
+}
+.sub-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.sub-container2{
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.team{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+.team:hover{
+    background:var(--sage-green);
+}
+
+.team img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.role{
+    font-style: italic;
+    color: var(--mint-green);
+}
+.about{
+    margin: 20px;
+}
+
+i{
+    color: beige;
+}
+
+
+
+/* General */
+
+.hamburger {
+    position: relative;
+  
+    width: 36px;
+  
+    transition: all 0.4s ease;
+  }
+  
+  .hamburger-btn {
+    position: absolute;
+    z-index: 999;
+  
+    width: 100%;
+    height: 100%;
+  
+    opacity: 0;
+  }
+  
+  .hamburger-btn:hover {
+    cursor: pointer;
+  }
+  
+  .hamburger-icon {
+    position: relative;
+    z-index: 998;
+  }
+  
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    display: block;
+    content: '';
+    height: 4px;
+  
+    background-color: var(--beige);
+    border-radius: 5px;
+  
+    transition: all 200ms ease-in-out;
+  }
+  
+  .hamburger-icon::before {
+    box-shadow: 0 10px 0 var(--beige);
+    margin-bottom: 16px;
+  }
+  
+  .hamburger-btn:checked + .hamburger-icon::before {
+    box-shadow: 0 0 0 var(--beige);
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .hamburger-btn:checked + .hamburger-icon::after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  [hamburger-btn-checked = true] .nav-links {
+    transform: none;
+  }
