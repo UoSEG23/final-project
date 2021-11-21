@@ -61,7 +61,7 @@ nav {
 }
 
 #main__img {
-  width: 90%;
+  width: 75%;
 }
 
 .fa-calendar{
@@ -122,15 +122,16 @@ nav {
   position: absolute;
   top: 0px;
   left: 0px;
+  z-index: 10;
 
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   background-color: var(--navy-blue);
 
   -webkit-font-smoothing: antialiased;  
   transform-origin: 0% 0%;
-  transform: translate(0, -100%);
+  transform: translate(0, -175%);
   transition: transform 0.75s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -152,11 +153,6 @@ nav {
   border-bottom: 1px solid var(--beige);
 }
 
-.nav-links > ul > li:hover {
-  cursor: pointer;
-  transition: background-color 0.2s ease-in;
-  background-color: #214361;
-}
 
 
 .nav-links > ul > li:last-child {
@@ -166,6 +162,12 @@ nav {
 .nav-links > ul > li > a {
   text-decoration: none;
   color: var(--beige)
+}
+
+.nav-links > ul > li > a:hover {
+  cursor: pointer;
+  transition: text-decoration 0.2s ease-in;
+  text-decoration: underline;
 }
 
 .hamburger {
@@ -223,4 +225,8 @@ nav {
 
 [hamburger-btn-checked = true] .nav-links {
   transform: none;
+}
+
+[hamburger-btn-checked = true] main {
+  display: none;
 }

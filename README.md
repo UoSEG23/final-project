@@ -1,6 +1,8 @@
 # Final Project
 This is a ([link](https://uoseg23.github.io/final-project/)) to the final project
 
+([View product.html](https://uoseg23.github.io/final-project/product.html))
+
 Team Name:<br/>
 <br/>
 Team Member Names:<br/>

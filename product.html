@@ -11,80 +11,181 @@
 
     <title>Product</title>
     <style>
+        .product{
+            width: 100%;
+        }
         body {
-            background-color: #264E70;
+            background-color: rgba(38, 78, 112);
+        }
+        .product{
+            display:block;
+        }
+        .product-intro{
+            text-align: center;
+        }
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .product-info div{
-            padding-top: 20px ;
-            padding-bottom: 10px;
-            margin-left: 2vw;
-            margin-right: 2vw;
-            margin-top: 3vw;
+            display: inline-block;
+            padding-top: 2vw ;
+            padding-left: 0.5vw;
+            margin: 3vw 0;
+            border-radius: 2vw;
+            width:80%;
             }
-        .product-info div h2{
+        .product h1{
+            text-align: center;
+            font-size: 4vw; 
+            margin-bottom: 0;
+            color: #F7E2D1;
+            margin-top: 3vw;
+        }
+        .product-info h2{
             text-align: center;
             color : #F7E2D1;
+            font-size: 3vw;
+            padding-left: 2vw;
+            padding-right:2vw;
+            padding-bottom: 2vw;
+            padding-top:2vw;
         }
-        .product-info div p{
+        .product-info h3{
             text-align: center;
-            color : #BBD4CE
         }
-        .what{
+       
+        .product-what{
             background-color: #679188;
-            border-radius: 2vw;
+            position: relative;
+            padding-bottom: 7vw;
+            font-size: 2.5vw;
         }
-        .app{
+        .product-what ul li{
+            width: 90%;
+            min-width: 250px;
+            float: left;
+            margin-left: 4vw;
+            margin-right: 3vw;
+            padding-bottom: 1vw;
+            color:#14334e;
+            
+        }
+        .product-list{
+            list-style-image: none;
+        }
+        .product-app{
+            position: absolute;
+            right: 0;
+            bottom: 0;   
+            margin-bottom: 1vw;
+            margin-right:1vw; 
+            color: #272643;       
+        }
+        .product-app button{
+            position: relative;
             background-color: #272643;
             border-radius: 2vw;
+            text-align: center;
+            color: #5f8d83;
+            font-size: 2vw;
+            padding: 1vw 4vw;
+            transition-duration: 400ms;
+            margin-left: 2vw;
         }
-        .physical{
+        .product-app button:hover{
+            cursor: pointer;
+            background-color: #72a59a;
+            color: #272643;
+            transition-duration: 500ms;
+
+        }
+        .product-physical{
             background-color: #664B80;
+            position: relative;
+        }
+        .product-physical p{
+            font-size: 2.5vw;
+            margin-bottom: 10vw;
+            margin-left: 3vw;
+            margin-right:3vw;
+            text-align: center;
+        }
+        .product-physical button{
+            position: absolute;
+            bottom:0;
+            right:0;
+            background-color: #272643;
             border-radius: 2vw;
+            text-align: center;
+            color: #664B80;
+            font-size: 2vw;
+            padding: 1vw 4vw;
+            transition-duration: 400ms;
+            margin-right: 2vw ;
+            margin-bottom: 2vw;
+        }
+        .product-physical button:hover{
+            cursor: pointer;
+            background-color: #5d3f79;
+            color: #272643;
+            transition-duration: 500ms;
         }
     </style>
 </head>
 
 <body>
     <header>
-      <div class="hamburger">
-        <input class="hamburger-btn" type="checkbox" />
-        <div class="hamburger-icon"></div>
-        
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="how_to _use.html">How to Use</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-          </ul>
+            <a href="index.html" id="navbar__logo"><i class="far fa-calendar-alt"></i> LivTo</a>
+            <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how_to _use.html">How to Use</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="hamburger">
+            <input class="hamburger-btn" type="checkbox" />
+            <div class="hamburger-icon"></div>
+            </div>
         </nav>
-      </div>
     </header>
     
-    <div id="product" class="product">
-        <div id="product-intro">
-            <h1>Product page</h1>
+    <main>
+        <div id="product" class="product">
+            <h1>What is LivTo</h1>
+            <div class="product-info">
+                <div id="product-what" class="product-what" >
+                    <h2>LivTo is a lifestyle that will help you be more organized and to remember tasks</h2>
+                    <ul class="product-list">
+                        <li>It helps you remember forgettable chores like watering the plants, cleaning your bedsheets, etc...</li>
+                        <li>It will help you stay safe during covid with reminders to clean your mask or with sanitization</li>
+                        <li>It will improve your lifestyle with plans, motivation, relaxation reminders</li>
+                        <li>It will help students and professionals remember due dates automatically</li>
+                        <li style="padding-bottom: 3vw;">Calendar (due dates, birthdays)</li>
+                    </ul>
+                    <p class="product-app">All of that will be done in a single app
+                        <button onclick="window.location.href='how_to _use.html'" class="product-app">Learn more</button>
+                    </p>
+                    
+                </div>
+                
+                <div id="product-physical" class="product-physical">
+                    <h2>LivTo physical products</h2>
+                    <p>In the near future, LivTo will start making physical products to better organize your life.
+                        <br/><br/>
+                        Please click the button below if you would like to help us with a suggestion
+                    </p>
+                    <button onclick="product_sug()" id="product_sug_btn">I have a product suggestion</button>
+                </div>
+            </div>
         </div>
-        <div id="product-info" class="product-info">
-            <div id="what" class="what">
-                <h2>What is LivTo</h2>
-                <p>Explination of what is LivTo
-                </p>
-            </div>
-            <div id="app" class="app">
-                <h2>LivTo app</h2>
-                <p>Explination of LivTo app
-                </p>
-            </div>
-            <div id="physical" class="physical">
-                <h2>LivTo physical products</h2>
-                <p>Explination of LivTo our physical products
-                </p>
-            </div>
-        </div>
-    </div>
+    </main>
 </body>
 <script src="scripts/main.js"></script>
 </html>
