@@ -129,26 +129,28 @@
 </head>
 
 <body>
-    <header>
-      <div class="hamburger">
-          
-        <input class="hamburger-btn" type="checkbox" />
-        <div class="hamburger-icon"></div>
-        
+    <header style="position: sticky;z-index: 2;">
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="how_to _use.html">How to Use</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-          </ul>
+          <a href="index.html" id="navbar__logo"><i class="far fa-calendar-alt"></i> LivTo</a>
+          <div class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="how_to _use.html">How to Use</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <input class="hamburger-btn" type="checkbox" />
+            <div class="hamburger-icon"></div>
+          </div>
         </nav>
-      </div>
     </header>
+  
     
-    <div id="product" class="product">
+    <div id="product" class="product" style="z-index: 1;">
         <h1>What is LivTo</h1>
         <div id="product-info" class="product-info">
             <div id="product-what" class="product-what" >
