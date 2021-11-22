@@ -1,7 +1,8 @@
 const hamburger_button = document.querySelector('.hamburger-btn');
 
 hamburger_button.addEventListener('change', (event) => {
-    document.body.setAttribute('hamburger-btn-checked', event.target.checked);
+    window.scrollTo(0, 0);
+    document.documentElement.setAttribute('hamburger-btn-checked', event.target.checked);
 });
   
 //For product.html
