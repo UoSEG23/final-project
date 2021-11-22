@@ -9,61 +9,98 @@
       <link rel="icon" href="images/title_image.png">
       <link rel="stylesheet" href="styles/styles.css">
 
-      <title>Product</title>
+      <title>How to use</title>
     
        <style>
-        .product{
-            width: 100%;
+        .how{
+          width: 100%;
+          display:block;
         }
         body {
-          font-size: 2vw;
-          text-align: center;
           background-color:#264e70;
-          color: aliceblue;
         }
-        main {
-          padding-left: 2vw;
-          padding-top: 2vw;
-          padding-bottom: 2vw;
-          padding-right: 2vw;
-         }
-        h1{
+        .how-info{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .how-info div{
+          display: inline-block;
+          padding-left: 0.5vw;
+          margin: 3vw 0;
+          border-radius: 2vw;
+          width:90%;
+        }
+        .how h1{
           text-align: center;
-          font-size: 4vw;
-          color: aliceblue;
+          font-size: 4vw; 
+          margin-bottom: 0;
+          color: #F7E2D1;
+          margin-top: 3vw;
         }
-        h2{
-          text-align: center ;
-          color: aliceblue;
+        .how-info h2{
+          text-align: center;
+          color : #F7E2D1;
           font-size: 3vw;
+          padding-left: 2vw;
+          padding-right:2vw;
+          padding-bottom: 2vw;
+          padding-top:2vw;
         }
-        ul li{
-            width: 90%;
-            min-width: 250px;
-            float: left;
-            margin-left: 4vw;
-            margin-right: 3vw;
-            padding-bottom: 1vw;
-            color:#14334e;
-        
-        a{
-          color:#5d3f79
+        .how-health{
+          background-color: #664B80;
+          position: relative;
+          font-size: 2.5vw;
         }
-        a:visited {
-          color:#679188;
+        .how-time {
+          background-color: #679188;
+          position: relative;
         }
-        a:hover{
-          color:beige
+        .how p{
+          font-size: 2.5vw;
+          margin-bottom: 3vw;
+          margin-left: 3vw;
+          margin-right:3vw;
+          text-align: center;
         }
-        p.double {
-          border-style: double;
-          color: #14334e;
+        .how-extra {
+          background-color: #BBD4CE;
+          position: relative;
+          padding-top:3vw;
+          padding-bottom : 3vw;
+          margin-top: 1vw;
+          margin-bottom: 1vw;
         }
-         
+        .how-extra p{
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+        .how-extra button{
+          position: relative;
+          background-color: #264e70;
+          border-radius: 2vw;
+          text-align: center;
+          color: #5f8d83;
+          font-size: 2vw;
+          padding: 1vw 4vw;
+          transition-duration: 400ms;
+          margin-left: 2vw;
+        }
+        .how-extra button:hover{
+          cursor: pointer;
+          background-color: #72a59a;
+          color: #272643;
+          transition-duration: 500ms;
+        }
+        .how-bottom{
+          font-size: 3vw;
+          text-align: center;
+          margin-bottom: 4vw;
+        }
     </style>
   </head>
   <body>
-    <header>
+    <header style="position: sticky;z-index: 2;">
       <nav>
         <a href="index.html" id="navbar__logo"><i class="far fa-calendar-alt"></i> LivTo</a>
         <div class="nav-links">
@@ -83,22 +120,47 @@
     </header>
       
 
-    <main>
-       
-    <h1>How to use LivTo to improve your health!</h2>
+  <main>
+      <div id="how" class="how">
+        <h1>How to use LivTo</h1>
+        <div class="how-info">
+            <div id="how-health" class="how-health" >
+                <h2>How to use LivTo to improve your health!</h2>
+                <p>
+                  In our app, our customer's health comes first. That is why we made sure that we monitor our 
+                  customers' health throughout the day, and that is by tracking customers' heartbeats, steps, 
+                  burnt calories, the oxygen level in the blood, and blood pressure. We recommend that customers 
+                  connect their smartwatch to the app. That could be done by going to the settings of your app, 
+                  under "connect devices" and then the customer will have the chance to choose their smartwatch, 
+                  following these easy steps you will be able to connect your smartwatch to the app and then you 
+                  will be able to monitor your health closer!!
+                </p>            
+            </div>
+            
+            <div id="how-time" class="how-time">
+                <h2>How to use LivTo to improve your time managment!</h2>
+                <p> Time management is a thing that all people have an issue with; that is why we made 
+                  sure that we do our best to make our customers finish all their to-do lists but at the 
+                  same enjoy their day without stressing. Customers can connect any smart home hub 
+                  (Alexa, google nest and apple home) the same way they connect their apple watches 
+                  (mentioned above) and set a voice notification that can remind them of all things that 
+                  they have to do. Another way that will help our customers with time management is choosing
+                  a schedule template where they do not have to worry about planning their day. You can
+                  Download schedule templates by going to "schedules" and pressing on the "+" sign, after 
+                  you just have to choose the template that suits your life the best. That is how to use 
+                  LivTo to make sure that you manage your time.
+                </p>
+            
+              </div>
+              <div class="how-extra">
+                <p class="how-contact">For more inquiries, visit our team.
+                  <button onclick="window.location.href='team.html'" class="how-contact">Learn more</button>
+              </p>
 
-    <p>
-      In our app, our customer's health comes first. That is why we made sure that we monitor our customers' health throughout the day, and that is by tracking customers' heartbeats, steps, burnt calories, the oxygen level in the blood, and blood pressure. We recommend that customers connect their smartwatch to the app. That could be done by going to the settings of your app, under "connect devices" and then the customer will have the chance to choose their smartwatch, following these easy steps you will be able to connect your smartwatch to the app and then you will be able to monitor your health closer!!</p>
-    <h1>How to use LivTo to improve your time managment!</h2>
-    <body>
-
-      Time management is a thing that all people have an issue with; that is why we made sure that we do our best to make our customers finish all their to-do lists but at the same enjoy their day without stressing. Customers can connect any smart home hub (Alexa, google nest and apple home) the same way they connect their apple watches (mentioned above) and set a voice notification that can remind them of all things that they have to do. Another way that will help our customers with time management is choosing a schedule template where they do not have to worry about planning their day. You can Download schedule templates by going to "schedules" and pressing on the "+" sign, after you just have to choose the template that suits your life the best. That is how to use LivTo to make sure that you manage your time.
-      <ul>
-        <li>For more inquiries, please contact us.</li>
-        <a onclick="window.location.href='contact-us.html'" class="How to use">Contact Us</a>
-      </ul>
-    </body>
-    <h2>Use LivTo to make sure that you are not missing anything!</h2>
+              </div>
+        </div>
+      </div> 
+    <h2 class="how-bottom">Use LivTo to make sure that you remember! <br/><br/></h2>
   </main>
     <script src="scripts/main.js"></script>
   </body>
