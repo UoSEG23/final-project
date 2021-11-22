@@ -1,9 +1,7 @@
 # Final Project
 This is a ([link](https://uoseg23.github.io/final-project/)) to the final project
 
-([View product.html](https://uoseg23.github.io/final-project/product.html))
-
-Team Name:<br/>
+Team Name: Group 23<br/>
 <br/>
 Team Member Names:<br/>
 Alexander Azizi Martin - Student Number 300236257 <br/>
