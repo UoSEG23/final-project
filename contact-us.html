@@ -10,31 +10,194 @@
       <link rel="stylesheet" href="styles/styles.css">
 
       <title>Contact Us</title>
+      <style>
+        .contactus {
+            width: 100%;
+        }
+        body {
+            background-color: rgba(45, 75, 117);
+        }
+        .contactus{
+            display:block;
+        }
+        .contactus-intro{
+            text-align: center;
+        }
+        .contactus-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contactus-info div{
+            display: inline-block;
+            padding-top: 2vw;
+            padding-left: 0.5vw;
+            margin: 3vw 0;
+            border-radius: 2vw;
+            width: 80%;
+        }
+        .contactus h1{
+            text-align: center;
+            font-size: 4vw;
+            margin-bottom: 0;
+            color: #F7E2D1;
+            margin-top: 3vw;
+        }
+        .contactus-info h2{
+            text-align: center; 
+            color: #F7E2D1;
+            font-size: 3vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-bottom: 2vw;
+            padding-top: 2vw;
+        }
+        .contactus-info h3{
+            text-align: center;
+        }
+        
+        .contactus-what{
+            background-color: #679188;
+            position: relative;
+            padding-bottom: 7vw;
+            font-size: 2.5vw;
+        }
+        .contactus-what ul li{
+            width: 90%;
+            min-width: 250px;
+            float: left;
+            margin-left: 4vw;
+            margin-right: 3vw;
+            padding-bottom: 1vw;
+            color: #14334e;
+          
+        }
+        .contactus-info-list{
+            list-style-image: none;
+        }
+        
+         .contactus-media-list{
+            list-style-image: none;
+        }
+        
+        .contactus-app{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-bottom: 1vw;
+            margin-right: 1vw;
+            color: #272643;
+        }
+        .contactus-app button{
+            position: relative;
+            background-color: #272643;
+            border-radius: 2vw;
+            text-align: center; 
+            color: #5f8d83;
+            font-size: 4vw; 
+            padding: 2vw 8vw;
+            transition-duration: 800ms;
+            margin-left: 2vw;
+        }
+        .contactus-app button: hover{
+            cursor: pointer; 
+            background-color: #72a59a;
+            color: #272643;
+            transition-duration: 1000ms;
+          
+        }
+        .contactus-media{
+            background-color: #664B80;
+            position: relative;
+        }
+        .contactus-media p{
+            font-size: 2.5vw;
+            margin-bottom: 10vw;
+            margin-left: 3vw;
+            margin-right: 3vw;
+            text-align: center; 
+        }
+        .contactus-media button{
+            position: absolute; 
+            bottom: 0;
+            right: 0;
+            background-color: #272643;
+            border-radius: 2vw;
+            text-align: center; 
+            color: #664B80;
+            font-size: 2vw;
+            padding: 1vw 4vw;
+            transition-duration: 800ms; 
+            margin-right: 2vw;
+            margin-bottom: 2vw;
+        }
+        .contactus-media button: hover{
+            cursor: pointer; 
+            background-color: #5d3f79;
+            color: #272643;
+            transition-duration: 1000ms;
+        }
+    </style>     
   </head>
 
   <body>
-    <header>
-      <div class="hamburger">
-        <input class="hamburger-btn" type="checkbox" />
-        <div class="hamburger-icon"></div>
-        
+    <header style= "position: sticky; z-index: 2;">     
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="how_to _use.html">How to Use</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
+          <a href="index.html" id="navbar__logo"><i class="far fa-calendar-alt"></i> LivTo</a>
+          <div class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="how_to _use.html">How to Use</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <input class="hamburger-btn" type="checkbox" />
+            <div class="hamburger-icon"></div>
+          </div>
+         </nav>
     </header>
 
-    <main>
-      Contact us page.
-    </main>
     
-    <script src="main.js"></script>
-  </body>
+    <main>
+      <div id="contactus" class="contactus">
+        <h1> Contact Us!</h1>
+        <div class="contactus-info">
+            <div id = "contactus-what" class = "contactus-what">
+              <h2> Do you have any questions? Are you interested in investing? If so, feel free to contact us in the following ways!: </h2>
+              <ul class = "contactus-info-list">
+                <li> General Customer Service: customerservice@livtoapp.com </li>
+                <li> Rajan Sharma, CEO: rajansharma.ceo@livtoapp.com </li>
+                <li> Alexander Azizi Martin. CPO: alexanderazizimartin.cpo@livtoapp.com </li>
+                <li> Cattuong Le, COO: cattuongle.coo@livtoapp.com </li>
+                <li> Taha Jalili, CTO: tahajalili.cto@livtoapp.com </li>
+                <li> Jérémy Baillargeon, CFO: jeremybaillargeon.cfo@livtoapp.com </li>
+                <li style="padding-bottom: 3vw;"> Fatima Mohammed Calih, CMO: fatimamohammedcallih.cmo@livtoapp.com </li>
+              </ul>
+              <p class="contact-us"> For a reminder of our business and it's products...
+                   <button onclick="window.location.href='product.html'" class="contact-us"> Click here</button>
+              </p>
+              
+          </div>
+          
+          <div id="contactus-media" class ="contactus-media">
+            <h2> Follow us on Social Media! </h2>
+            <ul class = "contactus-media-list">
+                <li> Instagram: @LivToApp </li>
+                <li> Facebook Page: LivTo Official </li>
+                <li> TikTok: @LivToApp </li>
+                <li> Twitter: @LivToApp </li>
+                <li style="padding-bottom: 3vw;"> Youtube Channel: LivTo Official </li>
+              </ul>
+              <p class="contact-us"> Check out our linktree with all of our social media here:
+                   <button onclick="window.location.href='https://linktr.ee/livtoapp'" class="contact-us"> Linktree</button>
+              </p>
+          </div>
+        </div>
+      </div>          
+    </main>
+ </body 
+<script src="main.js"></script>
 </html>
